@@ -9,7 +9,7 @@
 }
 
 .ce-chats-container {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #ffffff !important;
 }
 
 .ce-active-chat-card {
@@ -26,11 +26,14 @@
   padding-bottom: 20px !important;
 }
 .navbar {
-  background-color: #2ca3db;
+  background-color: #2f54eb;
   height: 5vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 0;
 }
 .log-out {
   cursor: pointer;
@@ -44,12 +47,12 @@
 }
 .ce-text-input {
   border-radius: 6px !important;
-  border: 1px solid #2ca3db !important;
+  border: 1px solid #2f54eb !important;
 }
 
 .ce-primary-button {
   border-radius: 6px !important;
-  background-color: #1298db !important;
+  background-color: #2f54eb !important;
   position: relative;
   bottom: 1px;
 }
@@ -60,17 +63,17 @@
 }
 
 .ce-settings {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #ffffff !important;
 }
 
 .ce-autocomplete-input {
   border-radius: 6px !important;
-  border: 1px solid #2ca3db !important;
+  border: 1px solid #2f54eb !important;
 }
 
 .ce-autocomplete-options {
   border-radius: 6px !important;
-  border: 1px solid #2ca3db !important;
+  border: 1px solid #2f54eb !important;
   background-color: white !important;
 }
 
@@ -81,30 +84,33 @@
 .ce-chat-avatars-row {
   display: none !important;
 }
+.ce-chat-title {
+  background-color: #ffffff !important;
+}
 
 /* CUSTOM FEED */
 
 .chat-feed {
-  height: 95vh !important;
+  height: 100vh !important;
   width: 100%;
   overflow: scroll;
   background-color: rgb(240, 240, 240);
 }
 
 .chat-title-container {
-  width: calc(100% - 36px);
-  padding: 18px;
+  width: 100%;
+  padding: 5% 0%;
   text-align: center;
 }
 
 .chat-title {
-  color: #1298db;
+  color: #2f54eb;
   font-weight: 800;
   font-size: 24px;
 }
 
 .chat-subtitle {
-  color: #1298db;
+  color: #2f54eb;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
@@ -170,22 +176,26 @@
 }
 
 .message-form-container {
-  position: relative;
-  bottom: 0 !important;
-  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 8vh;
+  width: 49.4vw;
   padding: 0;
   background-color: #ffffff;
+}
+.messages-container {
+  width: 95% !important;
+  padding: 0 !important;
+  margin-top: 20vh;
 }
 
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #1298db;
   background-color: white;
 }
 
 .message-input {
-  height: 8vh;
   width: calc(100% - 80px);
   background-color: white;
   border: 1px solid white;
@@ -193,6 +203,8 @@
   outline: none;
   font-size: 15px;
   display: inline-block;
+  min-width: 30vw;
+  max-width: 80vw;
 }
 
 .image-button {
@@ -237,19 +249,7 @@
 .wrapper {
   height: 100vh;
   width: 100%;
-  background: rgb(84, 160, 160);
-  background: linear-gradient(
-    90deg,
-    rgba(117, 84, 160, 1) 7%,
-    rgba(117, 84, 160, 1) 17%,
-    rgba(106, 95, 168, 1) 29%,
-    rgba(99, 103, 174, 1) 44%,
-    rgba(87, 116, 184, 1) 66%,
-    rgba(70, 135, 198, 1) 83%,
-    rgba(44, 163, 219, 1) 96%,
-    rgba(22, 188, 237, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,6 +271,10 @@
   margin-bottom: 25px;
 }
 
+.form {
+  width: 400px;
+}
+
 .title {
   text-align: center;
   color: white;
@@ -280,7 +284,7 @@
 }
 
 .button {
-  border-radius: 4px;
+  border-radius: 6px;
   border: none;
   background-color: white;
   color: black;
@@ -288,7 +292,6 @@
   text-transform: uppercase;
   font-size: 22px;
   padding: 10px 5px;
-  width: 200px;
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
@@ -329,10 +332,25 @@
   }
 
   .message-form-container {
+    position: absolute;
+    bottom: 0px;
     width: 100%;
-    padding: 0;
+    background-color: rgb(240, 240, 240);
+  }
+  .message-form-container {
+    position: absolute;
+    bottom: 5vh;
   }
   .button {
     margin-bottom: 15vh;
+  }
+
+  .message-form-container {
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 99vw;
+    padding: 0;
+    background-color: #ffffff;
   }
 }

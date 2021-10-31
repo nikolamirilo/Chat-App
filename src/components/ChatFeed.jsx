@@ -2,6 +2,7 @@ import React from "react";
 import MessageForm from "./MessageForm";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
+import { ChatHeader } from "react-chat-engine";
 
 const ChatFeed = (props) => {
   const { chats, activeChat, userName, messages } = props;
@@ -65,13 +66,14 @@ const ChatFeed = (props) => {
 
   return (
     <div className="chat-feed">
-      <div className="chat-title-container">
+      {/* <div className="chat-title-container">
         <div className="chat-title">{chat.title}</div>
         <div className="chat-subtitle">
-          {chat.people.map((person) => ` ${person.person.username}`)}
+          {chat.people.map((person) => ` ${person.person.username},`)}
         </div>
-      </div>
-      {renderMessages()}
+      </div> */}
+      <ChatHeader {...props} />
+      <div className="messages-container">{renderMessages()}</div>
       <div style={{ height: "100px" }} />
       <div className="message-form-container">
         <MessageForm {...props} chatId={activeChat} />
