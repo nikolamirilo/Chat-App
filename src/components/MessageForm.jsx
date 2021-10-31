@@ -27,7 +27,7 @@ const MessageForm = (props) => {
 
   return (
     <form className="message-form" onSubmit={handleSubmit}>
-      <textarea
+      <input
         className="message-input"
         placeholder="Send a message"
         value={value}

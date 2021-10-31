@@ -26,7 +26,7 @@
   padding-bottom: 20px !important;
 }
 .navbar {
-  background-color: #3b2a50;
+  background-color: #2ca3db;
   height: 5vh;
   display: flex;
   justify-content: center;
@@ -44,12 +44,12 @@
 }
 .ce-text-input {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #2ca3db !important;
 }
 
 .ce-primary-button {
   border-radius: 6px !important;
-  background-color: #7554a0 !important;
+  background-color: #1298db !important;
   position: relative;
   bottom: 1px;
 }
@@ -65,12 +65,12 @@
 
 .ce-autocomplete-input {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #2ca3db !important;
 }
 
 .ce-autocomplete-options {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #2ca3db !important;
   background-color: white !important;
 }
 
@@ -98,13 +98,13 @@
 }
 
 .chat-title {
-  color: #7554a0;
+  color: #1298db;
   font-weight: 800;
   font-size: 24px;
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #1298db;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
@@ -170,17 +170,17 @@
 }
 
 .message-form-container {
-  position: absolute;
-  bottom: 0px;
+  position: relative;
+  bottom: 0 !important;
   width: 100%;
-  padding: 0px 5%;
-  background-color: rgb(240, 240, 240);
+  padding: 0;
+  background-color: #ffffff;
 }
 
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #3b2a50;
+  border: 1px solid #1298db;
   background-color: white;
 }
 
@@ -193,8 +193,6 @@
   outline: none;
   font-size: 15px;
   display: inline-block;
-  min-width: 30vw;
-  max-width: 80vw;
 }
 
 .image-button {
@@ -239,7 +237,7 @@
 .wrapper {
   height: 100vh;
   width: 100%;
-  background: rgb(117, 84, 160);
+  background: rgb(84, 160, 160);
   background: linear-gradient(
     90deg,
     rgba(117, 84, 160, 1) 7%,
@@ -271,10 +269,6 @@
   transition: all 0.3s;
   outline: none;
   margin-bottom: 25px;
-}
-
-.form {
-  width: 400px;
 }
 
 .title {
@@ -335,15 +329,8 @@
   }
 
   .message-form-container {
-    position: absolute;
-    bottom: 0px;
     width: 100%;
-    padding: 0px 2.5%;
-    background-color: rgb(240, 240, 240);
-  }
-  .message-form-container {
-    position: absolute;
-    bottom: 5vh;
+    padding: 0;
   }
   .button {
     margin-bottom: 15vh;
