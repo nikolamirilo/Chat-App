@@ -1,9 +1,7 @@
 import React from "react";
 import "./App.css";
 import { ChatEngine } from "react-chat-engine";
-import ChatFeed from "./components/ChatFeed";
-import LoginForm from "./components/LoginForm";
-import Navbar from "./components/Navbar";
+import { ChatFeed, LoginForm, Navbar } from "./components";
 
 const App = () => {
   if (!localStorage.getItem("username")) return <LoginForm />;
@@ -12,7 +10,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <ChatEngine
-        height="95vh"
+        height="90vh"
         projectID="48417ad5-edcb-4b67-be4e-1cfda38b8cfc"
         userName={localStorage.getItem("username")}
         userSecret={localStorage.getItem("password")}

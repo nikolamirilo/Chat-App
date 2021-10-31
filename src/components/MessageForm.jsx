@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { sendMessage, isTyping } from "react-chat-engine";
-import { SendOutlined, PictureOutlined } from "@ant-design/icons";
+import { SendOutlined, PictureOutlined, CameraOutlined } from "@ant-design/icons";
 
 const MessageForm = (props) => {
   const [value, setValue] = useState("");
@@ -27,16 +27,23 @@ const MessageForm = (props) => {
 
   return (
     <form className="message-form" onSubmit={handleSubmit}>
-      <input
+      <span
         className="message-input"
-        placeholder="Send as message"
+        contenteditable="true"
         value={value}
         onChange={handleChange}
         onSubmit={handleSubmit}
-      />
+      ></span>
+
       <label htmlFor="upload-button">
         <span className="image-button">
           <PictureOutlined className="picture-icon" />
+        </span>
+      </label>
+
+      <label htmlFor="upload-button">
+        <span className="image-button">
+          <CameraOutlined className="camera-icon" />
         </span>
       </label>
 
