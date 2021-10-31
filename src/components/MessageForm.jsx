@@ -49,15 +49,15 @@ const MessageForm = (props) => {
         onChange={handleUpload}
       />
 
-      <button type="submit" className="send-button">
-        <SendOutlined className="send-icon" />
-      </button>
-
       <label htmlFor="upload-button">
         <span className="image-button">
           <CameraOutlined className="camera-icon" />
         </span>
       </label>
+
+      <button type="submit" className="send-button">
+        <SendOutlined className="send-icon" />
+      </button>
     </form>
   );
 };

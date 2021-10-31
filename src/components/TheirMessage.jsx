@@ -27,7 +27,7 @@ const TheirMessage = ({ lastMessage, message }) => {
             marginLeft: isFirstMessageByUser ? "4px" : "48px",
           }}
         >
-          {message.text}
+          <p>{message.text}</p>
         </div>
       )}
     </div>

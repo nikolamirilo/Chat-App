@@ -138,6 +138,8 @@
   font-size: 16px;
   border-radius: 6px;
   max-width: 60%;
+  height: fit-content;
+  word-break: break-word;
 }
 
 .message-image {
@@ -215,6 +217,13 @@
   top: 1px;
   font-size: 1.4rem;
   position: relative;
+  outline: none;
+}
+
+.send-icon:active,
+.camera-icon:active,
+.picture-icon:active {
+  outline: none;
 }
 
 /* FORM STYLES */
@@ -330,5 +339,9 @@
     width: 100%;
     padding: 0px 2.5%;
     background-color: rgb(240, 240, 240);
+  }
+  .message-form-container {
+    position: absolute;
+    bottom: 5vh;
   }
 }
