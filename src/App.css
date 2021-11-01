@@ -128,7 +128,7 @@
   float: left;
   width: 100%;
   display: flex;
-  margin-left: 18px;
+  margin-left: 5px;
 }
 
 .message-block {
@@ -137,18 +137,18 @@
 }
 
 .message-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 22px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
   color: white;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 48px;
+  background-size: 30px;
 }
 
 .message {
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
   border-radius: 6px;
   max-width: 60%;
@@ -174,27 +174,27 @@
 }
 
 .read-receipt {
-  width: 13px;
-  height: 13px;
-  border-radius: 13px;
-  margin: 1.5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 4px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 14px;
+  background-size: 20px;
 }
 
 .message-form-container {
   position: fixed;
   bottom: 0;
   height: 8vh;
-  width: 49.4vw;
+  width: 50vw;
   padding: 0;
   background-color: #ffffff;
 }
 .messages-container {
   width: 95% !important;
   padding: 0 !important;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .message-form {
@@ -220,6 +220,7 @@
   height: 100%;
   border: none;
   outline: none;
+  background-color: #ffffff;
 }
 .image-button:active {
   outline: none !important;
@@ -231,6 +232,7 @@
   padding: 0px 5px;
   cursor: pointer;
   outline: none;
+  background-color: #ffffff;
 }
 .send-button:active {
   outline: none !important;
@@ -367,5 +369,12 @@
     width: 99vw;
     padding: 0;
     background-color: #ffffff;
+  }
+  .log-out:hover {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .message-form-container {
+    width: 100vw;
   }
 }
