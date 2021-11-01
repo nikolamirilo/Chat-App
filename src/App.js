@@ -10,7 +10,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <ChatEngine
-        height="100vh"
+        height="95vh"
         projectID="48417ad5-edcb-4b67-be4e-1cfda38b8cfc"
         userName={localStorage.getItem("username")}
         userSecret={localStorage.getItem("password")}

@@ -8,9 +8,9 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
-      <li className="log-out" onClick={handleLogOut}>
+      <button className="log-out" onClick={handleLogOut}>
         Log Out
-      </li>
+      </button>
     </div>
   );
 };
