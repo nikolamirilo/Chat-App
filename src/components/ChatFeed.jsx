@@ -75,5 +75,4 @@ const ChatFeed = (props) => {
     </div>
   );
 };
-
 export default ChatFeed;
